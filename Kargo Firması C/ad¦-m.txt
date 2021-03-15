@@ -1,0 +1,17 @@
+            yol hesap kodu adımları
+1- İsim plaka değerini oku. ✔
+2- Komşuluk matrisini oku. ✔
+3- Dizi oluştur ilk değeri 41. ✔
+4- Teslimat şehirlerini kullanıcıdan al. Diziye ekle. ✔
+5- Dizide aynı olan şehirleri, son girilen değer kalacak şekilde 0'la. ✔
+6- Dizi[0] için dijkstra fonk çalıştır. (Uzaklik fonk elde edilir). ✔ (rota fonk elde edilmesi gerekiyor ama bizim kodda yok)
+7- Uzaklik fonk içinde dizi değerlerini karşılaştır. ✔
+8- En yakın şehiri yol dizisine(dizi[0]=41&dizi[son]=41) ve dizi[0]'a ata. Dizideki değerini null yap. ✔
+9- Dizinin elemanları bitene kadar 6 ve 7. adımları tekrarla. ✔
+10- Son eleman içinde çalıştırdıktan sonra kocaeliye dön. ✔
+            harita çizim kodu adımları
+1- Piksel değerlerini oku. 
+2- Yol dizisi elemanlarının piksel değerlerini bul. 
+3- Grafik taban resmini ayarla. (kütüphane eklenmedi)
+4- Resim üzerine yolu çiz(rota yok yol kuş uçumu).
+

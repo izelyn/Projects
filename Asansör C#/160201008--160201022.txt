@@ -1,0 +1,1942 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Threading;
+
+namespace uyg
+{
+    class Program
+    {
+        public static bool as2 = false, as3 = false, as4 = false, as5 = false;
+        public static int a = 0, b = 0, c = 0, d = 0, e = 0, f = 0, ki, ka, grky = 0, ckky = 0, k1 = 0, k2 = 0, k3 = 0, k4 = 0, k5 = 0, y1 = 0, y2 = 0, y3 = 0, y4 = 0, y5 = 0;
+        public static int illll, illl, ill, il, asa1 = 0, asa2 = 0, asa3 = 0, asa4 = 0, asa5 = 0, assay = 1;
+        public static int kln1 = 0, kln2 = 0, kln3 = 0, kln4 = 0, kln5, bnn1 = 0, bnn2 = 0, bnn3 = 0, bnn4 = 0, bnn5 = 0, kps1, kps2, kps3, kps4, kps5, bk, tpk = 0;
+        public static int klc11, klc12, klc13, klc14, klc21, klc22, klc23, klc24, klc31, klc32, klc33, klc34, klc41, klc42, klc43, klc44, klc51, klc52, klc53, klc54;
+        public static Random ras;
+        public static Queue kigi, kagi, k1k, k2k, k3k, k4k;
+        public static int[,] as1d, as2d, as3d, as4d, as5d;
+        public static void giris()
+        {
+            ki = ras.Next(1, 11);
+            ka = ras.Next(1, 5);
+            grky += ki;
+            Console.WriteLine("Giris kuyruguna {0} kisi eklendi.", ki);
+
+            kigi.Enqueue(ki);
+            kagi.Enqueue(ka);
+            Thread.Sleep(500);
+        }
+        public static void cikis()
+        {
+            ki = ras.Next(1, 6);
+            ka = ras.Next(1, 5);
+
+            ckky += ki;
+            switch (ka)
+            {
+                case 1:
+                    k1k.Enqueue(ki);
+                    Console.WriteLine("1. kat cikis kuyruguna {0} kisi eklendi.", ki);
+                    break;
+                case 2:
+                    k2k.Enqueue(ki);
+                    Console.WriteLine("2. kat cikis kuyruguna {0} kisi eklendi.", ki);
+                    break;
+                case 3:
+                    k3k.Enqueue(ki);
+                    Console.WriteLine("3.kat cikis kuyruguna {0} kisi eklendi.", ki);
+                    break;
+                case 4:
+                    k4k.Enqueue(ki);
+                    Console.WriteLine("4. kat cikis kuyruguna {0} kisi eklendi.", ki);
+                    break;
+                default:
+                    Console.WriteLine("hatali islem!!!");
+                    break;
+
+            }
+            Thread.Sleep(1000);
+        }
+        public static void kontrol()
+        {
+            
+            if (k1 == 0 && k2 == 0 && k3 == 0 && k4 == 0 && k5 == 0)
+            {
+
+                if (grky > 20 * assay)
+                {
+                    if (as2 == false)
+                    {
+
+                        as2 = true;
+                        assay++;
+                        Console.WriteLine("Giris kuyrugunda {0}, cikis kuyrugunda {1} kisi oldugundan 2. asansör aktif", grky, ckky);
+                    }
+                    else if (as3 == false)
+                    {
+                        as3 = true;
+                        assay++;
+                        Console.WriteLine("Giris kuyrugunda {0}, cikis kuyrugunda {1} kisi oldugundan 3. asansör aktif", grky, ckky);
+                    }
+                    else if (as4 == false)
+                    {
+                        as4 = true;
+                        assay++;
+                        Console.WriteLine("Giris kuyrugunda {0}, cikis kuyrugunda {1} kisi oldugundan 4. asansör aktif", grky, ckky);
+                    }
+                    else if (as5 == false)
+                    {
+                        as5 = true;
+                        assay++;
+                        Console.WriteLine("Giris kuyrugunda {0}, cikis kuyrugunda {1} kisi oldugundan 5. asansör aktif", grky, ckky);
+                    }
+                 }
+                if (grky < 10 )
+                {
+
+                    if (as5 == true)
+                    {
+                        as5 = false;
+                        assay--;
+                        Console.WriteLine("Giris kuyrugunda {0}, cikis kuyrugunda {1} kisi oldugundan 2. asansör pasif", grky, ckky);
+                    }
+                    else if (as4 == true)
+                    {
+                        as4 = false;
+                        assay--;
+                        Console.WriteLine("Giris kuyrugunda {0}, cikis kuyrugunda {1} kisi oldugundan 3. asansör pasif", grky, ckky);
+                    }
+                    else if (as3 == true)
+                    {
+                        as3 = false;
+                        assay--;
+                        Console.WriteLine("Giris kuyrugunda {0}, cikis kuyrugunda {1} kisi oldugundan 4. asansör pasif", grky, ckky);
+                    }
+                    else if (as2 == true)
+                    {
+                        as2 = false;
+                        assay--;
+                        Console.WriteLine("Giris kuyrugunda {0}, cikis kuyrugunda {1} kisi oldugundan 5. asansör pasif", grky, ckky);
+                    }
+                 }
+
+            }
+            Thread.Sleep(500);
+        }
+
+        public static void dolbos(int yon, int kat, int no)
+        {
+
+            switch (no)
+            {
+                case 1:
+                    if (yon == 0)///yukarı
+                    {
+
+                        if (kat == 0 && a < 10)
+                        {
+                            while (kps1 <= 10 && kigi.Count != 0)
+                            {
+                                if (kln1 == 0)
+                                {
+                                    kps1 += (int)kigi.Peek();
+                                }
+                                else
+                                {
+                                    kps1 += kln1;
+
+                                }
+                                if (kps1 <= 10)
+                                {
+                                    if (kln1 != 0)
+                                    {
+                                        as1d[a, 0] = kln1;
+                                        as1d[a, 1] = b;
+                                        grky -= kln1;
+                                        kln1 = 0;
+                                        Console.WriteLine("1. asansöre 0. katta {0} kisi bindi(kln)y", as1d[a, 0]);
+
+                                    }
+
+                                    else
+                                    {
+                                        as1d[a, 0] = (int)kigi.Peek();
+                                        as1d[a, 1] = (int)kagi.Peek();
+
+                                        grky -= (int)kigi.Peek();
+                                        Console.WriteLine("1. asansöre 0. katta {0} kisi bindi(<10)y", as1d[a, 0]);
+                                        kigi.Dequeue();
+                                        kagi.Dequeue();
+                                    }
+
+
+
+                                    a++;
+                                }
+                                else
+                                {
+
+                                    kln1 = kps1 % 10;
+                                    bnn1 = ((int)kigi.Peek() + 10 - kps1);
+                                    if (bnn1 != 0)
+                                    {
+                                        as1d[a, 0] = bnn1;
+                                        as1d[a, 1] = (int)kagi.Peek();
+                                        b = (int)kagi.Peek();
+                                        Console.WriteLine("1. asansöre 0. katta {0} kisi bindi(bnn)y", as1d[a, 0]);
+                                        kigi.Dequeue();
+                                        kagi.Dequeue();
+                                    }
+                                    grky -= bnn1;
+
+
+                                    a = 0;
+
+                                }
+                            }
+                        }
+                        else
+                        {
+                            for (bk = 0; bk < as1d.Length / 2; bk++)
+                            {
+                                if (as1d[bk, 1] == kat)
+                                {
+                                    kps1 = 0;
+                                    Console.WriteLine("1. asansörden {0}. katta {1} kisi indi", kat, as1d[bk, 0]);
+                                    as1d[bk, 0] = 0;
+                                    as1d[bk, 1] = 0;
+
+                                }
+                            }
+                        }
+                    }
+                    else///asagi
+                    {
+                        if (kat == 0)
+                        {
+                            for (bk = 0; bk < as1d.Length / 2; bk++)
+                            {
+                                tpk += as1d[bk, 0];
+                                as1d[bk, 0] = 0;
+                                as1d[bk, 1] = 0;
+                            }
+                            Console.WriteLine("1. asansörden 0. katta {0} kisi indi", tpk);
+                        }
+                        else
+                        {
+
+                            switch (kat)
+                            {
+                                case 1:////////////////////////////////////////////////kat1
+                                    if (k1k.Count != 0)
+                                    {
+                                        if (klc11 == 0)
+                                        {
+                                            kps1 += (int)k1k.Peek();
+                                        }
+                                        else
+                                        {
+                                            kps1 += klc11;
+
+                                        }
+                                        if (kps1 <= 10)
+                                        {
+
+                                            if (klc11 != 0)
+                                            {
+                                                as1d[asa1, 0] = klc11;
+                                                klc11 = 0;
+                                                Console.WriteLine("1. asansöre 1. katta {0} kisi bindi(kln)", as1d[asa1, 0]);
+                                            }
+
+                                            else
+                                            {
+                                                as1d[asa1, 0] = (int)k1k.Peek();
+                                                ckky-= (int)k1k.Peek();
+                                                Console.WriteLine("1. asansöre 1. katta {0} kisi bindi(<10)", as1d[asa1, 0]);
+                                                k1k.Dequeue();
+                                            }
+
+
+
+                                            asa1++;
+                                        }
+                                        else
+                                        {
+
+                                            klc11 = kps1 % 10;
+                                            bnn1 = ((int)k1k.Peek() + 10 - kps1);
+                                            if (bnn1 != 0)
+                                            {
+                                                as1d[asa1, 0] = bnn1;
+                                                ckky-= (int)k1k.Peek();
+                                                Console.WriteLine("1. asansöre 1. katta {0} kisi bindi(bnn)", as1d[asa1, 0]);
+                                                k1k.Dequeue();
+                                                asa1 = 0;
+                                            }
+
+
+                                        }
+                                    }
+                                    break;
+
+                                case 2:///////////////////////////////////////////kat2
+                                    if (k2k.Count != 0)
+                                    {
+                                        if (klc12 == 0)
+                                        {
+                                            kps1 += (int)k2k.Peek();
+                                        }
+                                        else
+                                        {
+                                            kps1 += klc12;
+
+                                        }
+                                        if (kps1 <= 10)
+                                        {
+
+                                            if (klc12 != 0)
+                                            {
+                                                as1d[asa1, 0] = klc12; 
+                                                klc12 = 0;
+                                                Console.WriteLine("1. asansöre 2. katta {0} kisi bindikln", as1d[asa1, 0]);
+                                            }
+
+                                            else
+                                            {
+                                                as1d[asa1, 0] = (int)k2k.Peek();
+                                                ckky -= (int)k2k.Peek();
+                                                Console.WriteLine("1. asansöre 2. katta {0} kisi bindi<10", as1d[asa1, 0]);
+                                                k2k.Dequeue();
+                                            }
+                                            asa1++;
+                                        }
+                                        else
+                                        {
+
+                                            klc12 = kps1 % 10;
+                                            bnn1 = ((int)k2k.Peek() + 10 - kps1);
+                                            if (bnn1 != 0)
+                                            {
+                                                as1d[asa1, 0] = bnn1;
+                                                Console.WriteLine("1. asansöre 2. katta {0} kisi bindibnn", as1d[asa1, 0]);
+                                                ckky -= (int)k2k.Peek();
+                                                k2k.Dequeue(); 
+                                                asa1 = 0;
+                                            }
+
+
+                                        }
+                                    }
+                                    break;
+                                case 3:
+                                    if (k3k.Count != 0)
+                                    {
+                                        if (klc13 == 0)
+                                        {
+                                            kps1 += (int)k3k.Peek();
+                                        }
+                                        else
+                                        {
+                                            kps1 += klc13;
+
+                                        }
+                                        if (kps1 <= 10)
+                                        {
+
+                                            if (klc13 != 0)
+                                            {
+                                                as1d[asa1, 0] = klc13;
+                                                klc13 = 0;
+                                                Console.WriteLine("1. asansöre 3. katta {0} kisi bindikln", as1d[asa1, 0]);
+
+                                            }
+
+                                            else
+                                            {
+                                                as1d[asa1, 0] = (int)k3k.Peek();
+                                                ckky -= (int)k3k.Peek();
+                                                Console.WriteLine("1. asansöre 3. katta {0} kisi bindi<10", as1d[asa1, 0]);
+                                                k3k.Dequeue();
+                                            }
+
+
+
+                                            asa1++;
+                                        }
+                                        else
+                                        {
+
+                                            klc13 = kps1 % 10;
+                                            bnn1 = ((int)k3k.Peek() + 10 - kps1);
+                                            if (bnn1 != 0)
+                                            {
+                                                as1d[asa1, 0] = bnn1;
+                                                Console.WriteLine("1. asansöre 3. katta {0} kisi bindibnn", as1d[asa1, 0]);
+                                                ckky -= (int)k3k.Peek();
+                                                k3k.Dequeue();
+                                                asa1 = 0;
+                                            }
+
+
+                                        }
+                                    }
+                                    break;
+                                case 4:
+                                    if (k4k.Count != 0)
+                                    {
+                                        if (klc14 == 0)
+                                        {
+                                            kps1 += (int)k4k.Peek();
+                                        }
+                                        else
+                                        {
+                                            kps1 += klc14;
+
+                                        }
+                                        if (kps1 <= 10)
+                                        {
+
+                                            if (klc14 != 0)
+                                            {
+                                                as1d[asa1, 0] = klc14; 
+                                                klc14 = 0;
+                                                Console.WriteLine("1. asansöre 4. katta {0} kisi bindikln", as1d[asa1, 0]);
+
+                                            }
+
+                                            else
+                                            {
+                                                as1d[asa1, 0] = (int)k4k.Peek();
+                                                ckky -= (int)k4k.Peek();
+                                                Console.WriteLine("1. asansöre 4. katta {0} kisi bindi<10", as1d[asa1, 0]);
+                                                k4k.Dequeue();
+                                            }
+
+
+
+                                            asa1++;
+                                        }
+                                        else
+                                        {
+
+                                            klc14 = kps1 % 10;
+                                            bnn1 = ((int)k4k.Peek() + 10 - kps1);
+                                            if (bnn1 != 0)
+                                            {
+                                                as1d[asa1, 0] = bnn1;
+                                                Console.WriteLine("1. asansöre 4. katta {0} kisi bindibnn", as1d[asa1, 0]);
+                                                ckky -= (int)k4k.Peek();
+                                                k4k.Dequeue(); 
+                                                asa1 = 0;
+                                            }
+
+
+                                        }
+                                    }
+                                    break;
+
+                                default:
+                                    break;
+
+                            }
+
+                        }
+                    }
+
+                    break;
+                case 2:
+                    if (yon == 0)///yukarı
+                    {
+
+                        if (kat == 0 && a < 10)
+                        {
+                            while (kps2 <= 10 && kigi.Count != 0)
+                            {
+                                if (kln2 == 0)
+                                {
+                                    kps2 += (int)kigi.Peek();
+                                }
+                                else
+                                {
+                                    kps2 += kln2;
+
+                                }
+                                if (kps2 <= 10)
+                                {
+                                    if (kln2 != 0)
+                                    {
+                                        as2d[a, 0] = kln2;
+                                        as2d[a, 1] = c;
+                                        grky -= kln2;
+                                        kln2 = 0;
+                                        Console.WriteLine("2. asansöre 0. katta {0} kisi bindi(kln)y", as2d[a, 0]);
+
+                                    }
+
+                                    else
+                                    {
+                                        as2d[a, 0] = (int)kigi.Peek();
+                                        as2d[a, 1] = (int)kagi.Peek();
+                                        grky -= (int)kigi.Peek();
+                                        Console.WriteLine("2. asansöre 0. katta {0} kisi bindi(<10)y", as2d[a, 0]);
+                                        kigi.Dequeue();
+                                        kagi.Dequeue();
+                                    }
+
+
+
+                                    a++;
+                                }
+                                else
+                                {
+
+                                    kln2 = kps2 % 10;
+                                    bnn2 = ((int)kigi.Peek() + 10 - kps2);
+                                    if (bnn2 != 0)
+                                    {
+                                        as2d[a, 0] = bnn2;
+                                        as2d[a, 1] = (int)kagi.Peek();
+                                        c = (int)kagi.Peek();
+                                        Console.WriteLine("2. asansöre 0. katta {0} kisi bindi(bnn)y", as2d[a, 0]);
+                                        kigi.Dequeue();
+                                        kagi.Dequeue();
+                                    }
+                                    grky -= bnn2;
+
+
+                                    a = 0;
+
+                                }
+                            }
+                        }
+                        else
+                        {
+                            for (bk = 0; bk < as2d.Length / 2; bk++)
+                            {
+                                if (as2d[bk, 1] == kat)
+                                {
+                                    kps2 = 0;
+                                    Console.WriteLine("2. asansörden {0}. katta {1} kisi indi", kat, as2d[bk, 0]);
+                                    as2d[bk, 0] = 0;
+                                    as2d[bk, 1] = 0;
+
+                                }
+                            }
+                        }
+                    }
+                    else///asagi
+                    {
+                        if (kat == 0)
+                        {
+                            for (bk = 0; bk < as2d.Length / 2; bk++)
+                            {
+                                tpk += as2d[bk, 0];
+                                as2d[bk, 0] = 0;
+                                as2d[bk, 1] = 0;
+                            }
+                            Console.WriteLine("2. asansörden 0. katta {0} kisi indi", tpk);
+                        }
+                        else
+                        {
+
+                            switch (kat)
+                            {
+                                case 1:////////////////////////////////////////////////kat1
+                                    if (k1k.Count != 0)
+                                    {
+                                        if (klc21 == 0)
+                                        {
+                                            kps2 += (int)k1k.Peek();
+                                        }
+                                        else
+                                        {
+                                            kps2 += klc21;
+
+                                        }
+                                        if (kps2 <= 10)
+                                        {
+
+                                            if (klc21 != 0)
+                                            {
+                                                as2d[asa2, 0] = klc21; 
+                                                klc21 = 0;
+                                                Console.WriteLine("2. asansöre 1. katta {0} kisi bindi(kln)", as2d[asa2, 0]);
+
+                                            }
+
+                                            else
+                                            {
+                                                as2d[asa2, 0] = (int)k1k.Peek();
+                                                ckky -= (int)k1k.Peek();
+                                                Console.WriteLine("2. asansöre 1. katta {0} kisi bindi(<10)", as2d[asa2, 0]);
+                                                k1k.Dequeue();
+                                            }
+
+
+
+                                            asa2++;
+                                        }
+                                        else
+                                        {
+
+                                            klc21 = kps2 % 10;
+                                            bnn2 = ((int)k1k.Peek() + 10 - kps2);
+                                            if (bnn2 != 0)
+                                            {
+                                                as2d[asa2, 0] = bnn2;
+                                                Console.WriteLine("2. asansöre 1. katta {0} kisi bindi(bnn)", as2d[asa2, 0]);
+                                                ckky -= (int)k1k.Peek();
+                                                k1k.Dequeue(); 
+                                                asa2 = 0;
+                                            }
+
+
+                                        }
+                                    }
+                                    break;
+
+                                case 2:///////////////////////////////////////////kat2
+                                    if (k2k.Count != 0)
+                                    {
+                                        if (klc22 == 0)
+                                        {
+                                            kps2 += (int)k2k.Peek();
+                                        }
+                                        else
+                                        {
+                                            kps2 += klc22;
+
+                                        }
+                                        if (kps2 <= 10)
+                                        {
+
+                                            if (klc22 != 0)
+                                            {
+                                                as2d[asa2, 0] = klc22; 
+                                                klc22 = 0;
+                                                Console.WriteLine("2. asansöre 2. katta {0} kisi bindikln", as2d[asa2, 0]);
+
+                                            }
+
+                                            else
+                                            {
+                                                as2d[asa2, 0] = (int)k2k.Peek();
+                                                ckky -= (int)k2k.Peek();
+                                                Console.WriteLine("2. asansöre 2. katta {0} kisi bindi<10", as2d[asa2, 0]);
+                                                k2k.Dequeue();
+                                            }
+                                            asa2++;
+                                        }
+                                        else
+                                        {
+
+                                            klc22 = kps2 % 10;
+                                            bnn2 = ((int)k2k.Peek() + 10 - kps2);
+                                            if (bnn2 != 0)
+                                            {
+                                                as2d[asa2, 0] = bnn2;
+                                                Console.WriteLine("2. asansöre 2. katta {0} kisi bindibnn", as2d[asa2, 0]);
+                                                ckky -= (int)k2k.Peek();
+                                                k2k.Dequeue(); 
+                                                asa2 = 0;
+                                            }
+
+
+                                        }
+                                    }
+                                    break;
+                                case 3:
+                                    if (k3k.Count != 0)
+                                    {
+                                        if (klc23 == 0)
+                                        {
+                                            kps2 += (int)k3k.Peek();
+                                        }
+                                        else
+                                        {
+                                            kps2 += klc23;
+
+                                        }
+                                        if (kps2 <= 10)
+                                        {
+
+                                            if (klc23 != 0)
+                                            {
+                                                as2d[asa2, 0] = klc23; 
+                                                klc23 = 0;
+                                                Console.WriteLine("2. asansöre 3. katta {0} kisi bindikln", as2d[asa2, 0]);
+
+                                            }
+
+                                            else
+                                            {
+                                                as2d[asa2, 0] = (int)k3k.Peek();
+                                                ckky -= (int)k3k.Peek();
+                                                Console.WriteLine("2. asansöre 3. katta {0} kisi bindi<10", as2d[asa2, 0]);
+                                                k3k.Dequeue();
+                                            }
+
+
+
+                                            asa2++;
+                                        }
+                                        else
+                                        {
+
+                                            klc23 = kps2 % 10;
+                                            bnn2 = ((int)k3k.Peek() + 10 - kps2);
+                                            if (bnn2 != 0)
+                                            {
+                                                as2d[asa2, 0] = bnn2;
+                                                Console.WriteLine("2. asansöre 3. katta {0} kisi bindibnn", as2d[asa2, 0]);
+                                                ckky -= (int)k3k.Peek();
+                                                k3k.Dequeue(); 
+                                                asa2 = 0;
+                                            }
+
+
+                                        }
+                                    }
+                                    break;
+                                case 4:
+                                    if (k4k.Count != 0)
+                                    {
+                                        if (klc24 == 0)
+                                        {
+                                            kps2 += (int)k4k.Peek();
+                                        }
+                                        else
+                                        {
+                                            kps2 += klc24;
+
+                                        }
+                                        if (kps2 <= 10)
+                                        {
+
+                                            if (klc24 != 0)
+                                            {
+                                                as2d[asa2, 0] = klc24; 
+                                                klc24 = 0;
+                                                Console.WriteLine("2. asansöre 4. katta {0} kisi bindikln", as2d[asa2, 0]);
+
+                                            }
+
+                                            else
+                                            {
+                                                as2d[asa2, 0] = (int)k4k.Peek();
+                                                ckky -= (int)k4k.Peek();
+                                                Console.WriteLine("2. asansöre 4. katta {0} kisi bindi<10", as2d[asa2, 0]);
+                                                k4k.Dequeue();
+                                            }
+
+
+
+                                            asa2++;
+                                        }
+                                        else
+                                        {
+
+                                            klc24 = kps2 % 10;
+                                            bnn2 = ((int)k4k.Peek() + 10 - kps2);
+                                            if (bnn2 != 0)
+                                            {
+                                                as2d[asa2, 0] = bnn2;
+                                                Console.WriteLine("2. asansöre 4. katta {0} kisi bindibnn", as2d[asa2, 0]);
+                                                ckky -= (int)k4k.Peek();
+                                                k4k.Dequeue(); 
+                                                asa2 = 0;
+                                            }
+
+
+                                        }
+                                    }
+                                    break;
+
+                                default:
+                                    break;
+
+                            }
+
+                        }
+                    }
+
+
+                    break;
+                case 3:
+                    if (yon == 0)///yukarı
+                    {
+
+                        if (kat == 0 && a < 10)
+                        {
+                            while (kps3 <= 10 && kigi.Count != 0)
+                            {
+                                if (kln3 == 0)
+                                {
+                                    kps3 += (int)kigi.Peek();
+                                }
+                                else
+                                {
+                                    kps3 += kln3;
+
+                                }
+                                if (kps3 <= 10)
+                                {
+                                    if (kln3 != 0)
+                                    {
+                                        as3d[a, 0] = kln3;
+                                        as3d[a, 1] = d;
+                                        grky -= kln3;
+                                        kln3 = 0;
+                                        Console.WriteLine("3. asansöre 0. katta {0} kisi bindi(kln)y", as3d[a, 0]);
+
+                                    }
+
+                                    else
+                                    {
+                                        as3d[a, 0] = (int)kigi.Peek();
+                                        as3d[a, 1] = (int)kagi.Peek();
+
+                                        grky -= (int)kigi.Peek();
+                                        Console.WriteLine("3. asansöre 0. katta {0} kisi bindi(<10)y", as3d[a, 0]);
+                                        kigi.Dequeue();
+                                        kagi.Dequeue();
+                                    }
+
+
+
+                                    a++;
+                                }
+                                else
+                                {
+
+                                    kln3 = kps3 % 10;
+                                    bnn3 = ((int)kigi.Peek() + 10 - kps3);
+                                    if (bnn3 != 0)
+                                    {
+                                        as3d[a, 0] = bnn3;
+                                        as3d[a, 1] = (int)kagi.Peek();
+                                        d = (int)kagi.Peek();
+                                        Console.WriteLine("3. asansöre 0. katta {0} kisi bindi(bnn)y", as3d[a, 0]);
+                                        kigi.Dequeue();
+                                        kagi.Dequeue();
+                                    }
+                                    grky -= bnn3;
+
+
+                                    a = 0;
+
+                                }
+                            }
+                        }
+                        else
+                        {
+                            for (bk = 0; bk < as3d.Length / 2; bk++)
+                            {
+                                if (as3d[bk, 1] == kat)
+                                {
+                                    kps3 = 0;
+                                    Console.WriteLine("3. asansörden {0}. katta {1} kisi indi", kat, as3d[bk, 0]);
+                                    as3d[bk, 0] = 0;
+                                    as3d[bk, 1] = 0;
+
+                                }
+                            }
+                        }
+                    }
+                    else///asagi
+                    {
+                        if (kat == 0)
+                        {
+                            for (bk = 0; bk < as3d.Length / 2; bk++)
+                            {
+                                tpk += as3d[bk, 0];
+                                as3d[bk, 0] = 0;
+                                as3d[bk, 1] = 0;
+                            }
+                            Console.WriteLine("3. asansörden 0. katta {0} kisi indi", tpk);
+                        }
+                        else
+                        {
+
+                            switch (kat)
+                            {
+                                case 1:////////////////////////////////////////////////kat1
+                                    if (k1k.Count != 0)
+                                    {
+                                        if (klc31 == 0)
+                                        {
+                                            kps3 += (int)k1k.Peek();
+                                        }
+                                        else
+                                        {
+                                            kps3 += klc31;
+
+                                        }
+                                        if (kps3 <= 10)
+                                        {
+
+                                            if (klc31 != 0)
+                                            {
+                                                as3d[asa3, 0] = klc31; 
+                                                klc31 = 0;
+                                                Console.WriteLine("3. asansöre 1. katta {0} kisi bindi(kln)", as3d[asa3, 0]);
+
+                                            }
+
+                                            else
+                                            {
+                                                as3d[asa3, 0] = (int)k1k.Peek();
+                                                ckky -= (int)k1k.Peek();
+                                                Console.WriteLine("3. asansöre 1. katta {0} kisi bindi(<10)", as3d[asa3, 0]);
+                                                k1k.Dequeue();
+                                            }
+
+
+
+                                            asa3++;
+                                        }
+                                        else
+                                        {
+
+                                            klc31 = kps3 % 10;
+                                            bnn3 = ((int)k1k.Peek() + 10 - kps3);
+                                            if (bnn3 != 0)
+                                            {
+                                                as3d[asa3, 0] = bnn3;
+                                                Console.WriteLine("3. asansöre 1. katta {0} kisi bindi(bnn)", as3d[asa3, 0]);
+                                                ckky -= (int)k1k.Peek();
+                                                k1k.Dequeue(); 
+                                                asa3 = 0;
+                                            }
+
+
+                                        }
+                                    }
+                                    break;
+
+                                case 2:///////////////////////////////////////////kat2
+                                    if (k2k.Count != 0)
+                                    {
+                                        if (klc32 == 0)
+                                        {
+                                            kps3 += (int)k2k.Peek();
+                                        }
+                                        else
+                                        {
+                                            kps3 += klc32;
+
+                                        }
+                                        if (kps3 <= 10)
+                                        {
+
+                                            if (klc32 != 0)
+                                            {
+                                                as3d[asa3, 0] = klc32; 
+                                                klc32 = 0;
+                                                Console.WriteLine("3. asansöre 2. katta {0} kisi bindikln", as3d[asa3, 0]);
+
+                                            }
+
+                                            else
+                                            {
+                                                as3d[asa3, 0] = (int)k2k.Peek();
+                                                ckky -= (int)k2k.Peek();
+                                                Console.WriteLine("3. asansöre 2. katta {0} kisi bindi<10", as3d[asa3, 0]);
+                                                k2k.Dequeue();
+                                            }
+                                            asa3++;
+                                        }
+                                        else
+                                        {
+
+                                            klc32 = kps3 % 10;
+                                            bnn3 = ((int)k2k.Peek() + 10 - kps3);
+                                            if (bnn3 != 0)
+                                            {
+                                                as3d[asa3, 0] = bnn3;
+                                                Console.WriteLine("3. asansöre 2. katta {0} kisi bindibnn", as3d[asa3, 0]);
+                                                ckky -= (int)k2k.Peek();
+                                                k2k.Dequeue(); 
+                                                asa3 = 0;
+                                            }
+
+
+                                        }
+                                    }
+                                    break;
+                                case 3:
+                                    if (k3k.Count != 0)
+                                    {
+                                        if (klc33 == 0)
+                                        {
+                                            kps3 += (int)k3k.Peek();
+                                        }
+                                        else
+                                        {
+                                            kps3 += klc33;
+
+                                        }
+                                        if (kps3 <= 10)
+                                        {
+
+                                            if (klc33 != 0)
+                                            {
+                                                as3d[asa3, 0] = klc33; 
+                                                klc33 = 0;
+                                                Console.WriteLine("3. asansöre 3. katta {0} kisi bindikln", as3d[asa3, 0]);
+
+                                            }
+
+                                            else
+                                            {
+                                                as3d[asa3, 0] = (int)k3k.Peek();
+                                                ckky -= (int)k3k.Peek();
+                                                Console.WriteLine("3. asansöre 3. katta {0} kisi bindi<10", as3d[asa3, 0]);
+                                                k3k.Dequeue();
+                                            }
+
+
+
+                                            asa3++;
+                                        }
+                                        else
+                                        {
+
+                                            klc33 = kps3 % 10;
+                                            bnn3 = ((int)k3k.Peek() + 10 - kps3);
+                                            if (bnn3 != 0)
+                                            {
+                                                as3d[asa3, 0] = bnn3;
+                                                Console.WriteLine("3. asansöre 3. katta {0} kisi bindibnn", as3d[asa3, 0]);
+                                                ckky -= (int)k3k.Peek();
+                                                k3k.Dequeue(); 
+                                                asa3 = 0;
+                                            }
+
+
+                                        }
+                                    }
+                                    break;
+                                case 4:
+                                    if (k4k.Count != 0)
+                                    {
+                                        if (klc34 == 0)
+                                        {
+                                            kps3 += (int)k4k.Peek();
+                                        }
+                                        else
+                                        {
+                                            kps3 += klc34;
+
+                                        }
+                                        if (kps3 <= 10)
+                                        {
+
+                                            if (klc34 != 0)
+                                            {
+                                                as3d[asa3, 0] = klc34; 
+                                                klc34 = 0;
+                                                Console.WriteLine("3. asansöre 4. katta {0} kisi bindikln", as3d[asa3, 0]);
+
+                                            }
+
+                                            else
+                                            {
+                                                as3d[asa3, 0] = (int)k4k.Peek();
+                                                ckky -= (int)k4k.Peek();
+                                                Console.WriteLine("3. asansöre 4. katta {0} kisi bindi<10", as3d[asa3, 0]);
+                                                k4k.Dequeue();
+                                            }
+
+
+
+                                            asa3++;
+                                        }
+                                        else
+                                        {
+
+                                            klc34 = kps3 % 10;
+                                            bnn3 = ((int)k4k.Peek() + 10 - kps3);
+                                            if (bnn3 != 0)
+                                            {
+                                                as3d[asa3, 0] = bnn3;
+                                                Console.WriteLine("3. asansöre 4. katta {0} kisi bindibnn", as3d[asa3, 0]);
+                                                ckky -= (int)k4k.Peek();
+                                                k4k.Dequeue(); 
+                                                asa3 = 0;
+                                            }
+
+
+                                        }
+                                    }
+                                    break;
+
+                                default:
+                                    break;
+
+                            }
+                        }
+                    }
+
+
+                    break;
+                case 4:
+                    if (yon == 0)///yukarı
+                    {
+
+                        if (kat == 0 && a < 10)
+                        {
+                            while (kps4 <= 10 && kigi.Count != 0)
+                            {
+                                if (kln4 == 0)
+                                {
+                                    kps4 += (int)kigi.Peek();
+                                }
+                                else
+                                {
+                                    kps4 += kln4;
+
+                                }
+                                if (kps4 <= 10)
+                                {
+                                    if (kln4 != 0)
+                                    {
+                                        as4d[a, 0] = kln4;
+                                        as4d[a, 1] = e;
+                                        grky -= kln4;
+                                        kln4 = 0;
+                                        Console.WriteLine("4. asansöre 0. katta {0} kisi bindi(kln)y", as4d[a, 0]);
+
+                                    }
+
+                                    else
+                                    {
+                                        as4d[a, 0] = (int)kigi.Peek();
+                                        as4d[a, 1] = (int)kagi.Peek();
+
+                                        grky -= (int)kigi.Peek();
+                                        Console.WriteLine("4. asansöre 0. katta {0} kisi bindi(<10)y", as4d[a, 0]);
+                                        kigi.Dequeue();
+                                        kagi.Dequeue();
+                                    }
+
+
+
+                                    a++;
+                                }
+                                else
+                                {
+
+                                    kln4 = kps4 % 10;
+                                    bnn4 = ((int)kigi.Peek() + 10 - kps4);
+                                    if (bnn4 != 0)
+                                    {
+                                        as4d[a, 0] = bnn4;
+                                        as4d[a, 1] = (int)kagi.Peek();
+                                        e = (int)kagi.Peek();
+                                        Console.WriteLine("4. asansöre 0. katta {0} kisi bindi(bnn)y", as4d[a, 0]);
+                                        kigi.Dequeue();
+                                        kagi.Dequeue();
+                                    }
+                                    grky -= bnn4;
+
+
+                                    a = 0;
+
+                                }
+                            }
+                        }
+                        else
+                        {
+                            for (bk = 0; bk < as4d.Length / 2; bk++)
+                            {
+                                if (as4d[bk, 1] == kat)
+                                {
+                                    kps4 = 0;
+                                    Console.WriteLine("4. asansörden {0}. katta {1} kisi indi", kat, as4d[bk, 0]);
+                                    as4d[bk, 0] = 0;
+                                    as4d[bk, 1] = 0;
+
+                                }
+                            }
+                        }
+                    }
+                    else///asagi
+                    {
+                        if (kat == 0)
+                        {
+                            for (bk = 0; bk < as4d.Length / 2; bk++)
+                            {
+                                tpk += as4d[bk, 0];
+                                as4d[bk, 0] = 0;
+                                as4d[bk, 1] = 0;
+                            }
+                            Console.WriteLine("4. asansörden 0. katta {0} kisi indi", tpk);
+                        }
+                        else
+                        {
+                            switch (kat)
+                            {
+                                case 1:////////////////////////////////////////////////kat1
+                                    if (k1k.Count != 0)
+                                    {
+                                        if (klc41 == 0)
+                                        {
+                                            kps4 += (int)k1k.Peek();
+                                        }
+                                        else
+                                        {
+                                            kps4 += klc41;
+
+                                        }
+                                        if (kps4 <= 10)
+                                        {
+
+                                            if (klc41 != 0)
+                                            {
+                                                as4d[asa4, 0] = klc41; 
+                                                klc41 = 0;
+                                                Console.WriteLine("4. asansöre 1. katta {0} kisi bindi(kln)", as4d[asa4, 0]);
+
+                                            }
+
+                                            else
+                                            {
+                                                as4d[asa4, 0] = (int)k1k.Peek();
+                                                ckky -= (int)k1k.Peek();
+                                                Console.WriteLine("4. asansöre 1. katta {0} kisi bindi(<10)", as4d[asa4, 0]);
+                                                k1k.Dequeue();
+                                            }
+
+
+
+                                            asa4++;
+                                        }
+                                        else
+                                        {
+
+                                            klc41 = kps4 % 10;
+                                            bnn4 = ((int)k1k.Peek() + 10 - kps4);
+                                            if (bnn4 != 0)
+                                            {
+                                                as4d[asa4, 0] = bnn4;
+                                                Console.WriteLine("4. asansöre 1. katta {0} kisi bindi(bnn)", as4d[asa4, 0]);
+                                                ckky -= (int)k1k.Peek();
+                                                k1k.Dequeue(); 
+                                                asa4 = 0;
+                                            }
+
+
+                                        }
+                                    }
+                                    break;
+
+                                case 2:///////////////////////////////////////////kat2
+                                    if (k2k.Count != 0)
+                                    {
+                                        if (klc42 == 0)
+                                        {
+                                            kps4 += (int)k2k.Peek();
+                                        }
+                                        else
+                                        {
+                                            kps4 += klc42;
+
+                                        }
+                                        if (kps4 <= 10)
+                                        {
+
+                                            if (klc42 != 0)
+                                            {
+                                                as4d[asa4, 0] = klc42; 
+                                                klc42 = 0;
+                                                Console.WriteLine("4. asansöre 2. katta {0} kisi bindikln", as4d[asa4, 0]);
+
+                                            }
+
+                                            else
+                                            {
+                                                as4d[asa4, 0] = (int)k2k.Peek();
+                                                ckky -= (int)k2k.Peek();
+                                                Console.WriteLine("4. asansöre 2. katta {0} kisi bindi<10", as4d[asa4, 0]);
+                                                k2k.Dequeue();
+                                            }
+                                            asa4++;
+                                        }
+                                        else
+                                        {
+
+                                            klc42 = kps4 % 10;
+                                            bnn4 = ((int)k2k.Peek() + 10 - kps4);
+                                            if (bnn4 != 0)
+                                            {
+                                                as4d[asa4, 0] = bnn4;
+                                                Console.WriteLine("4. asansöre 2. katta {0} kisi bindibnn", as4d[asa4, 0]);
+                                                ckky -= (int)k2k.Peek();
+                                                k2k.Dequeue(); 
+                                                asa4 = 0;
+                                            }
+
+
+                                        }
+                                    }
+                                    break;
+                                case 3:
+                                    if (k3k.Count != 0)
+                                    {
+                                        if (klc43 == 0)
+                                        {
+                                            kps4 += (int)k3k.Peek();
+                                        }
+                                        else
+                                        {
+                                            kps4 += klc43;
+
+                                        }
+                                        if (kps4 <= 10)
+                                        {
+
+                                            if (klc43 != 0)
+                                            {
+                                                as4d[asa4, 0] = klc43; 
+                                                klc43 = 0;
+                                                Console.WriteLine("4. asansöre 3. katta {0} kisi bindikln", as4d[asa4, 0]);
+
+                                            }
+
+                                            else
+                                            {
+                                                as4d[asa4, 0] = (int)k3k.Peek();
+                                                ckky -= (int)k3k.Peek();
+                                                Console.WriteLine("4. asansöre 3. katta {0} kisi bindi<10", as4d[asa4, 0]);
+                                                k3k.Dequeue();
+                                            }
+
+
+
+                                            asa4++;
+                                        }
+                                        else
+                                        {
+
+                                            klc43 = kps4 % 10;
+                                            bnn4 = ((int)k3k.Peek() + 10 - kps4);
+                                            if (bnn4 != 0)
+                                            {
+                                                as4d[asa4, 0] = bnn4;
+                                                Console.WriteLine("4. asansöre 3. katta {0} kisi bindibnn", as4d[asa4, 0]);
+                                                ckky -= (int)k3k.Peek();
+                                                k3k.Dequeue(); 
+                                                asa4 = 0;
+                                            }
+
+
+                                        }
+                                    }
+                                    break;
+                                case 4:
+                                    if (k4k.Count != 0)
+                                    {
+                                        if (klc44 == 0)
+                                        {
+                                            kps4 += (int)k4k.Peek();
+                                        }
+                                        else
+                                        {
+                                            kps4 += klc44;
+
+                                        }
+                                        if (kps4 <= 10)
+                                        {
+
+                                            if (klc44 != 0)
+                                            {
+                                                as4d[asa4, 0] = klc44; 
+                                                klc44 = 0;
+                                                Console.WriteLine("4. asansöre 4. katta {0} kisi bindikln", as4d[asa4, 0]);
+
+                                            }
+
+                                            else
+                                            {
+                                                as4d[asa4, 0] = (int)k4k.Peek();
+                                                ckky -= (int)k4k.Peek();
+                                                Console.WriteLine("4. asansöre 4. katta {0} kisi bindi<10", as4d[asa4, 0]);
+                                                k4k.Dequeue();
+                                            }
+
+
+
+                                            asa4++;
+                                        }
+                                        else
+                                        {
+
+                                            klc44 = kps4 % 10;
+                                            bnn4 = ((int)k4k.Peek() + 10 - kps4);
+                                            if (bnn4 != 0)
+                                            {
+                                                as4d[asa4, 0] = bnn4;
+                                                Console.WriteLine("4. asansöre 4. katta {0} kisi bindibnn", as4d[asa4, 0]);
+                                                ckky -= (int)k4k.Peek();
+                                                k4k.Dequeue(); 
+                                                asa4 = 0;
+                                            }
+
+
+                                        }
+                                    }
+                                    break;
+
+                                default:
+                                    break;
+
+                            }
+                        }
+                    }
+
+
+
+                    break;
+                case 5:
+                    if (yon == 0)///yukarı
+                    {
+
+                        if (kat == 0 && a < 10)
+                        {
+                            while (kps5 <= 10 && kigi.Count != 0)
+                            {
+                                if (kln5 == 0)
+                                {
+                                    kps5 += (int)kigi.Peek();
+                                }
+                                else
+                                {
+                                    kps5 += kln5;
+
+                                }
+                                if (kps5 <= 10)
+                                {
+                                    if (kln5 != 0)
+                                    {
+                                        as5d[a, 0] = kln5;
+                                        as5d[a, 1] = f;
+                                        grky -= kln5;
+                                        kln5 = 0;
+                                        Console.WriteLine("5. asansöre 0. katta {0} kisi bindi(kln)y", as5d[a, 0]);
+
+                                    }
+
+                                    else
+                                    {
+                                        as5d[a, 0] = (int)kigi.Peek();
+                                        as5d[a, 1] = (int)kagi.Peek();
+
+                                        grky -= (int)kigi.Peek();
+                                        Console.WriteLine("5. asansöre 0. katta {0} kisi bindi(<10)y", as5d[a, 0]);
+                                        kigi.Dequeue();
+                                        kagi.Dequeue();
+                                    }
+
+
+
+                                    a++;
+                                }
+                                else
+                                {
+
+                                    kln5 = kps5 % 10;
+                                    bnn5 = ((int)kigi.Peek() + 10 - kps5);
+                                    if (bnn5 != 0)
+                                    {
+                                        as5d[a, 0] = bnn5;
+                                        as5d[a, 1] = (int)kagi.Peek();
+                                        f = (int)kagi.Peek();
+                                        Console.WriteLine("5. asansöre 0. katta {0} kisi bindi(bnn)y", as5d[a, 0]);
+                                        kigi.Dequeue();
+                                        kagi.Dequeue();
+                                    }
+                                    grky -= bnn5;
+
+
+                                    a = 0;
+
+                                }
+                            }
+                        }
+                        else
+                        {
+                            for (bk = 0; bk < as5d.Length / 2; bk++)
+                            {
+                                if (as5d[bk, 1] == kat)
+                                {
+                                    kps5 = 0;
+                                    Console.WriteLine("5. asansörden {0}. katta {1} kisi indi", kat, as5d[bk, 0]);
+                                    as5d[bk, 0] = 0;
+                                    as5d[bk, 1] = 0;
+
+                                }
+                            }
+                        }
+                    }
+                    else///asagi
+                    {
+                        if (kat == 0)
+                        {
+                            for (bk = 0; bk < as5d.Length / 2; bk++)
+                            {
+                                tpk += as5d[bk, 0];
+                                as5d[bk, 0] = 0;
+                                as5d[bk, 1] = 0;
+                            }
+                            Console.WriteLine("5. asansörden 0. katta {0} kisi indi", tpk);
+                        }
+                        else
+                        {
+
+                            switch (kat)
+                            {
+                                case 1:////////////////////////////////////////////////kat1
+                                    if (k1k.Count != 0)
+                                    {
+                                        if (klc51 == 0)
+                                        {
+                                            kps5 += (int)k1k.Peek();
+                                        }
+                                        else
+                                        {
+                                            kps5 += klc51;
+
+                                        }
+                                        if (kps5 <= 10)
+                                        {
+
+                                            if (klc51 != 0)
+                                            {
+                                                as5d[asa5, 0] = klc51; 
+                                                klc51 = 0;
+                                                Console.WriteLine("5. asansöre 1. katta {0} kisi bindi(kln)", as5d[asa5, 0]);
+
+                                            }
+
+                                            else
+                                            {
+                                                as5d[asa5, 0] = (int)k1k.Peek();
+                                                ckky -= (int)k1k.Peek();
+                                                Console.WriteLine("5. asansöre 1. katta {0} kisi bindi(<10)", as5d[asa5, 0]);
+                                                k1k.Dequeue();
+                                            }
+
+
+
+                                            asa5++;
+                                        }
+                                        else
+                                        {
+
+                                            klc51 = kps5 % 10;
+                                            bnn5 = ((int)k1k.Peek() + 10 - kps5);
+                                            if (bnn5 != 0)
+                                            {
+                                                as5d[asa5, 0] = bnn5;
+                                                Console.WriteLine("5. asansöre 1. katta {0} kisi bindi(bnn)", as5d[asa5, 0]);
+                                                ckky -= (int)k1k.Peek();
+                                                k1k.Dequeue(); 
+                                                asa5 = 0;
+                                            }
+
+
+                                        }
+                                    }
+                                    break;
+
+                                case 2:///////////////////////////////////////////kat2
+                                    if (k2k.Count != 0)
+                                    {
+                                        if (klc52 == 0)
+                                        {
+                                            kps5 += (int)k2k.Peek();
+                                        }
+                                        else
+                                        {
+                                            kps5 += klc52;
+
+                                        }
+                                        if (kps5 <= 10)
+                                        {
+
+                                            if (klc52 != 0)
+                                            {
+                                                as5d[asa5, 0] = klc52; 
+                                                klc52 = 0;
+                                                Console.WriteLine("5. asansöre 2. katta {0} kisi bindikln", as5d[asa5, 0]);
+
+                                            }
+
+                                            else
+                                            {
+                                                as5d[asa5, 0] = (int)k2k.Peek();
+                                                ckky -= (int)k2k.Peek();
+                                                Console.WriteLine("5. asansöre 2. katta {0} kisi bindi<10", as5d[asa5, 0]);
+                                                k2k.Dequeue();
+                                            }
+                                            asa5++;
+                                        }
+                                        else
+                                        {
+
+                                            klc52 = kps5 % 10;
+                                            bnn5 = ((int)k2k.Peek() + 10 - kps5);
+                                            if (bnn5 != 0)
+                                            {
+                                                as5d[asa5, 0] = bnn5;
+                                                Console.WriteLine("5. asansöre 2. katta {0} kisi bindibnn", as5d[asa5, 0]);
+                                                ckky -= (int)k2k.Peek();
+                                                k2k.Dequeue(); 
+                                                asa5 = 0;
+                                            }
+
+
+                                        }
+                                    }
+                                    break;
+                                case 3:
+                                    if (k3k.Count != 0)
+                                    {
+                                        if (klc53 == 0)
+                                        {
+                                            kps5 += (int)k3k.Peek();
+                                        }
+                                        else
+                                        {
+                                            kps5 += klc53;
+
+                                        }
+                                        if (kps5 <= 10)
+                                        {
+
+                                            if (klc53 != 0)
+                                            {
+                                                as5d[asa5, 0] = klc53; 
+                                                klc53 = 0;
+                                                Console.WriteLine("5. asansöre 3. katta {0} kisi bindikln", as5d[asa5, 0]);
+
+                                            }
+
+                                            else
+                                            {
+                                                as5d[asa5, 0] = (int)k3k.Peek();
+                                                ckky -= (int)k3k.Peek();
+                                                Console.WriteLine("5. asansöre 3. katta {0} kisi bindi<10", as5d[asa5, 0]);
+                                                k3k.Dequeue();
+                                            }
+
+
+
+                                            asa5++;
+                                        }
+                                        else
+                                        {
+
+                                            klc53 = kps5 % 10;
+                                            bnn5 = ((int)k3k.Peek() + 10 - kps5);
+                                            if (bnn5 != 0)
+                                            {
+                                                as5d[asa5, 0] = bnn5;
+                                                Console.WriteLine("5. asansöre 3. katta {0} kisi bindibnn", as5d[asa5, 0]);
+                                                ckky -= (int)k3k.Peek();
+                                                k3k.Dequeue(); 
+                                                asa5 = 0;
+                                            }
+
+                                        }
+                                    }
+                                    break;
+                                case 4:
+                                    if (k4k.Count != 0)
+                                    {
+                                        if (klc54 == 0)
+                                        {
+                                            kps5 += (int)k4k.Peek();
+                                        }
+                                        else
+                                        {
+                                            kps5 += klc54;
+
+                                        }
+                                        if (kps5 <= 10)
+                                        {
+
+                                            if (klc54 != 0)
+                                            {
+                                                as5d[asa5, 0] = klc54; 
+                                                klc54 = 0;
+                                                Console.WriteLine("5. asansöre 4. katta {0} kisi bindikln", as5d[asa5, 0]);
+
+                                            }
+
+                                            else
+                                            {
+                                                as5d[asa5, 0] = (int)k4k.Peek();
+                                                ckky -= (int)k4k.Peek();
+                                                Console.WriteLine("5. asansöre 4. katta {0} kisi bindi<10", as5d[asa5, 0]);
+                                                k4k.Dequeue();
+                                            }
+
+
+
+                                            asa5++;
+                                        }
+                                        else
+                                        {
+
+                                            klc54 = kps5 % 10;
+                                            bnn5 = ((int)k4k.Peek() + 10 - kps5);
+                                            if (bnn5 != 0)
+                                            {
+                                                as5d[asa5, 0] = bnn5;
+                                                Console.WriteLine("5. asansöre 4. katta {0} kisi bindibnn", as5d[asa5, 0]);
+                                                ckky -= (int)k4k.Peek();
+                                                k4k.Dequeue(); 
+                                                asa5 = 0;
+                                            }
+
+
+                                        }
+                                    }
+                                    break;
+
+                                default:
+                                    break;
+
+
+                            }
+                        }
+                    }
+
+                    break;
+                default:
+                    Console.WriteLine("hatali islem yaptiniz");
+                    break;
+            }
+
+        }
+        public static void asansor1()
+        {
+            if (kigi.Count != 0)
+            {
+                if (k1 < 0)
+                {
+                    y1 = 0;
+                }
+                else if (k1 > 4)
+                {
+                    y1 = 1;
+                }
+                if (y1 == 0)
+                {
+                    Thread.Sleep(200);
+                    dolbos(y1, k1, 1);
+                    k1++;
+
+                }
+                else if (y1 == 1)
+                {
+                    Thread.Sleep(200);
+                    dolbos(y1, k1, 1);
+                    k1--;
+                }
+            }
+        }
+        public static void asansor2()
+        {
+            if (as2 == true && kigi.Count != 0)
+            {
+                if (k2 == 0)
+                {
+                    y2 = 0;
+                }
+                else if (k2 == 4)
+                {
+                    y2 = 1;
+                }
+                if (y2 == 0)
+                {
+                    Thread.Sleep(200);
+                    dolbos(y2, k2, 2);
+                    k2++;
+                    
+                }
+                else if (y2 == 1)
+                {
+                    Thread.Sleep(200);
+                    dolbos(y2, k2, 2);
+                    k2--;
+                }
+            }
+
+        }
+        public static void asansor3()
+        {
+            if (as3 == true && kigi.Count != 0)
+            {
+                if (k3 == 0)
+                {
+                    y3 = 0;
+                }
+                else if (k3 == 4)
+                {
+                    y3 = 1;
+                }
+                if (y3 == 0)
+                {
+                    Thread.Sleep(200);
+                    dolbos(y3, k3, 3);
+                    k3++;
+                    
+                }
+                else if (y3 == 1)
+                {
+                    Thread.Sleep(200);
+                    dolbos(y3, k3, 3);
+                    k3--;
+                }
+            }
+
+        }
+        public static void asansor4()
+        {
+            if (as4 == true && kigi.Count != 0)
+            {
+                if (k4 == 0)
+                {
+                    y4 = 0;
+                }
+                else if (k4 == 4)
+                {
+                    y4 = 1;
+                }
+                if (y4 == 0)
+                {
+                    Thread.Sleep(200);
+                    dolbos(y4, k4, 4);
+                    k4++;
+                    
+                }
+                else if (y4 == 1)
+                {
+                    Thread.Sleep(200);
+                    dolbos(y4, k4, 4);
+                    k4--;
+                }
+            }
+
+        }
+        public static void asansor5()
+        {
+            if (as5 == true && kigi.Count != 0)
+            {
+                if (k5 == 0)
+                {
+                    y5 = 0;
+                }
+                else if (k5 == 4)
+                {
+                    y5 = 1;
+                }
+                if (y5 == 0)
+                {
+                    Thread.Sleep(200);
+                    dolbos(y5, k5, 5);
+                    k5++;
+                    
+                }
+                else if (y5 == 1)
+                {
+                    Thread.Sleep(200);
+                    dolbos(y5, k5, 5);
+                    k5--;
+                }
+            }
+
+        }
+        public static void grs()
+        {
+
+            for (illll = 0; illll < 50; illll++)
+            {
+
+                giris(); 
+            }
+        }
+        public static void cks()
+        {
+
+            for (illl = 0; illl < 50; illl++)
+            {
+                 
+                cikis();  
+            }
+        }
+        public static void kntrl()
+        {
+
+            for (ill = 0; ill < 500; ill++)
+            {
+                 
+                     
+                    kontrol();
+                     
+                
+            }
+        }
+        public static void asnsr()
+        {
+
+            for (il = 0; il < 50; il++)
+            {
+                Thread.Sleep(100);
+                asansor1();
+                Thread.Sleep(100);
+                asansor2();
+                Thread.Sleep(100);
+                asansor3();
+                Thread.Sleep(100);
+                asansor4();
+                Thread.Sleep(100);
+                asansor5();
+                Thread.Sleep(100);
+            }
+
+
+        }
+        static void Main(string[] args)
+        {
+            kigi = new Queue();
+            kagi = new Queue();
+
+            k1k = new Queue();
+            k2k = new Queue();
+            k3k = new Queue();
+            k4k = new Queue();
+
+            as1d = new int[50, 2];
+            as2d = new int[50, 2];
+            as3d = new int[50, 2];
+            as4d = new int[50, 2];
+            as5d = new int[50, 2];
+
+            ras = new Random();
+            Thread th1 = new Thread(grs);
+            Thread th2 = new Thread(cks);
+            Thread th3 = new Thread(kntrl);
+            Thread th4 = new Thread(asnsr);
+
+            th1.Start();
+            th2.Start();
+            th3.Start();
+            th4.Start();
+        }
+    }
+}

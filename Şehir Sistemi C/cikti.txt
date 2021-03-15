@@ -1,0 +1,586 @@
+1 Adana AK 6
+2 Adiyaman GA 5
+3 Afyonkarahisar EG 7
+4 Agri DA 6
+5 Amasya KA 4
+6 Ankara IA 7
+7 Antalya AK 6
+8 Artvin KA 3
+9 Aydin EG 4
+10 Balikesir MA 5
+11 Bilecik MA 5
+12 Bingol DA 6
+13 Bitlis DA 5
+14 Bolu KA 8
+15 Burdur AK 5
+16 Bursa MA 6
+17 Canakkale MA 3
+18 Cankiri IA 6
+19 Corum KA 7
+20 Denizli EG 6
+21 Diyarbakir GA 8
+22 Edirne MA 3
+23 Elazig DA 5
+24 Erzincan DA 9
+25 Erzurum DA 9
+26 Eskisehir IA 6
+27 Gaziantep GA 6
+28 Giresun KA 5
+29 Gumushane KA 4
+30 Hakkari DA 2
+31 Hatay AK 3
+32 Isparta AK 4
+33 Mersin AK 5
+34 Istanbul MA 2
+35 Izmir EG 3
+36 Kars DA 4
+37 Kastamonu KA 5
+38 Kayseri IA 6
+39 Kirklareli MA 2
+40 Kirsehir IA 5
+41 Kocaeli MA 4
+42 Konya IA 9
+43 Kutahya EG 7
+44 Malatya DA 6
+45 Manisa EG 6
+46 Kahramanmaras AK 7
+47 Mardin GA 5
+48 Mugla EG 4
+49 Mus DA 6
+50 Nevsehir IA 5
+51 Nigde IA 6
+52 Ordu KA 4
+53 Rize KA 4
+54 Sakarya MA 5
+55 Samsun KA 5
+56 Siirt GA 5
+57 Sinop KA 3
+58 Sivas IA 8
+59 Tekirdag MA 4
+60 Tokat KA 5
+61 Trabzon KA 4
+62 Tunceli DA 3
+63 Sanliurfa GA 4
+64 Usak EG 4
+65 Van DA 5
+66 Yozgat IA 8
+67 Zonguldak KA 4
+68 Aksaray IA 5
+69 Bayburt KA 5
+70 Karaman IA 3
+71 Kirikkale IA 5
+72 Batman GA 5
+73 Sirnak GA 4
+74 Bartin KA 3
+75 Ardahan DA 3
+76 Igdir DA 2
+77 Yalova MA 2
+78 Karabuk KA 5
+79 Kilis GA 1
+80 Osmaniye AK 4
+81 Duzce KA 3
+seciminiz:2
+aranan sehrin plakasi: 1
+bulundugu bolge:AK
+komsu sayisi:6
+seciminiz:2
+aranan sehrin adi: Burdur
+bulundugu bolge:AK
+komsu sayisi:5
+seciminiz:6
+
+hatali secim yaptiniz.
+1 Adana AK 6
+2 Adiyaman GA 5
+3 Afyonkarahisar EG 7
+4 Agri DA 6
+5 Amasya KA 4
+6 Ankara IA 7
+7 Antalya AK 6
+8 Artvin KA 3
+9 Aydin EG 4
+10 Balikesir MA 5
+11 Bilecik MA 5
+12 Bingol DA 6
+13 Bitlis DA 5
+14 Bolu KA 8
+15 Burdur AK 5
+16 Bursa MA 6
+17 Canakkale MA 3
+18 Cankiri IA 6
+19 Corum KA 7
+20 Denizli EG 6
+21 Diyarbakir GA 8
+22 Edirne MA 3
+23 Elazig DA 5
+24 Erzincan DA 9
+25 Erzurum DA 9
+26 Eskisehir IA 6
+27 Gaziantep GA 6
+28 Giresun KA 5
+29 Gumushane KA 4
+30 Hakkari DA 2
+31 Hatay AK 3
+32 Isparta AK 4
+33 Mersin AK 5
+34 Istanbul MA 2
+35 Izmir EG 3
+36 Kars DA 4
+37 Kastamonu KA 5
+38 Kayseri IA 6
+39 Kirklareli MA 2
+40 Kirsehir IA 5
+41 Kocaeli MA 4
+42 Konya IA 9
+43 Kutahya EG 7
+44 Malatya DA 6
+45 Manisa EG 6
+46 Kahramanmaras AK 7
+47 Mardin GA 5
+48 Mugla EG 4
+49 Mus DA 6
+50 Nevsehir IA 5
+51 Nigde IA 6
+52 Ordu KA 4
+53 Rize KA 4
+54 Sakarya MA 5
+55 Samsun KA 5
+56 Siirt GA 5
+57 Sinop KA 3
+58 Sivas IA 8
+59 Tekirdag MA 4
+60 Tokat KA 5
+61 Trabzon KA 4
+62 Tunceli DA 3
+63 Sanliurfa GA 4
+64 Usak EG 4
+65 Van DA 5
+66 Yozgat IA 8
+67 Zonguldak KA 4
+68 Aksaray IA 5
+69 Bayburt KA 5
+70 Karaman IA 3
+71 Kirikkale IA 5
+72 Batman GA 5
+73 Sirnak GA 4
+74 Bartin KA 3
+75 Ardahan DA 3
+76 Igdir DA 2
+77 Yalova MA 2
+78 Karabuk KA 5
+79 Kilis GA 1
+80 Osmaniye AK 4
+81 Duzce KA 3
+seciminiz:3
+silinen sehrin plakasi: 31
+adi: Hatay
+bulundugu bolge:AK
+komsu sayisi:3
+seciminiz:4
+ia bolgesinde bulunan sehirler:
+sehrin adi: Ankara
+plakasi:6
+komsu sayisi:7
+sehrin adi: Cankiri
+plakasi:18
+komsu sayisi:6
+sehrin adi: Eskisehir
+plakasi:26
+komsu sayisi:6
+sehrin adi: Kayseri
+plakasi:38
+komsu sayisi:6
+sehrin adi: Kirsehir
+plakasi:40
+komsu sayisi:5
+sehrin adi: Konya
+plakasi:42
+komsu sayisi:9
+sehrin adi: Nevsehir
+plakasi:50
+komsu sayisi:5
+sehrin adi: Nigde
+plakasi:51
+komsu sayisi:6
+sehrin adi: Sivas
+plakasi:58
+komsu sayisi:8
+sehrin adi: Yozgat
+plakasi:66
+komsu sayisi:8
+sehrin adi: Aksaray
+plakasi:68
+komsu sayisi:5
+sehrin adi: Karaman
+plakasi:70
+komsu sayisi:3
+sehrin adi: Kirikkale
+plakasi:71
+komsu sayisi:5
+bolgede 13 adet sehir vardir.
+seciminiz:5
+komsu sayilari esit sehirler:
+sehrin adi: Adana
+plakasi:1
+bulundugu bolge:AK
+komsu sayisi:6
+sehrin adi: Adiyaman
+plakasi:2
+bulundugu bolge:GA
+komsu sayisi:5
+sehrin adi: Agri
+plakasi:4
+bulundugu bolge:DA
+komsu sayisi:6
+sehrin adi: Amasya
+plakasi:5
+bulundugu bolge:KA
+komsu sayisi:4
+sehrin adi: Antalya
+plakasi:7
+bulundugu bolge:AK
+komsu sayisi:6
+sehrin adi: Artvin
+plakasi:8
+bulundugu bolge:KA
+komsu sayisi:3
+sehrin adi: Aydin
+plakasi:9
+bulundugu bolge:EG
+komsu sayisi:4
+sehrin adi: Balikesir
+plakasi:10
+bulundugu bolge:MA
+komsu sayisi:5
+sehrin adi: Bilecik
+plakasi:11
+bulundugu bolge:MA
+komsu sayisi:5
+sehrin adi: Bingol
+plakasi:12
+bulundugu bolge:DA
+komsu sayisi:6
+sehrin adi: Bitlis
+plakasi:13
+bulundugu bolge:DA
+komsu sayisi:5
+sehrin adi: Burdur
+plakasi:15
+bulundugu bolge:AK
+komsu sayisi:5
+sehrin adi: Bursa
+plakasi:16
+bulundugu bolge:MA
+komsu sayisi:6
+sehrin adi: Canakkale
+plakasi:17
+bulundugu bolge:MA
+komsu sayisi:3
+sehrin adi: Cankiri
+plakasi:18
+bulundugu bolge:IA
+komsu sayisi:6
+sehrin adi: Denizli
+plakasi:20
+bulundugu bolge:EG
+komsu sayisi:6
+sehrin adi: Edirne
+plakasi:22
+bulundugu bolge:MA
+komsu sayisi:3
+sehrin adi: Elazig
+plakasi:23
+bulundugu bolge:DA
+komsu sayisi:5
+sehrin adi: Eskisehir
+plakasi:26
+bulundugu bolge:IA
+komsu sayisi:6
+sehrin adi: Gaziantep
+plakasi:27
+bulundugu bolge:GA
+komsu sayisi:6
+sehrin adi: Giresun
+plakasi:28
+bulundugu bolge:KA
+komsu sayisi:5
+sehrin adi: Gumushane
+plakasi:29
+bulundugu bolge:KA
+komsu sayisi:4
+sehrin adi: Isparta
+plakasi:32
+bulundugu bolge:AK
+komsu sayisi:4
+sehrin adi: Mersin
+plakasi:33
+bulundugu bolge:AK
+komsu sayisi:5
+sehrin adi: Izmir
+plakasi:35
+bulundugu bolge:EG
+komsu sayisi:3
+sehrin adi: Kars
+plakasi:36
+bulundugu bolge:DA
+komsu sayisi:4
+sehrin adi: Kastamonu
+plakasi:37
+bulundugu bolge:KA
+komsu sayisi:5
+sehrin adi: Kayseri
+plakasi:38
+bulundugu bolge:IA
+komsu sayisi:6
+sehrin adi: Kirsehir
+plakasi:40
+bulundugu bolge:IA
+komsu sayisi:5
+sehrin adi: Kocaeli
+plakasi:41
+bulundugu bolge:MA
+komsu sayisi:4
+sehrin adi: Malatya
+plakasi:44
+bulundugu bolge:DA
+komsu sayisi:6
+sehrin adi: Manisa
+plakasi:45
+bulundugu bolge:EG
+komsu sayisi:6
+sehrin adi: Mardin
+plakasi:47
+bulundugu bolge:GA
+komsu sayisi:5
+sehrin adi: Mugla
+plakasi:48
+bulundugu bolge:EG
+komsu sayisi:4
+sehrin adi: Mus
+plakasi:49
+bulundugu bolge:DA
+komsu sayisi:6
+sehrin adi: Nevsehir
+plakasi:50
+bulundugu bolge:IA
+komsu sayisi:5
+sehrin adi: Nigde
+plakasi:51
+bulundugu bolge:IA
+komsu sayisi:6
+sehrin adi: Ordu
+plakasi:52
+bulundugu bolge:KA
+komsu sayisi:4
+sehrin adi: Rize
+plakasi:53
+bulundugu bolge:KA
+komsu sayisi:4
+sehrin adi: Sakarya
+plakasi:54
+bulundugu bolge:MA
+komsu sayisi:5
+sehrin adi: Samsun
+plakasi:55
+bulundugu bolge:KA
+komsu sayisi:5
+sehrin adi: Siirt
+plakasi:56
+bulundugu bolge:GA
+komsu sayisi:5
+sehrin adi: Sinop
+plakasi:57
+bulundugu bolge:KA
+komsu sayisi:3
+sehrin adi: Tekirdag
+plakasi:59
+bulundugu bolge:MA
+komsu sayisi:4
+sehrin adi: Tokat
+plakasi:60
+bulundugu bolge:KA
+komsu sayisi:5
+sehrin adi: Trabzon
+plakasi:61
+bulundugu bolge:KA
+komsu sayisi:4
+sehrin adi: Tunceli
+plakasi:62
+bulundugu bolge:DA
+komsu sayisi:3
+sehrin adi: Sanliurfa
+plakasi:63
+bulundugu bolge:GA
+komsu sayisi:4
+sehrin adi: Usak
+plakasi:64
+bulundugu bolge:EG
+komsu sayisi:4
+sehrin adi: Van
+plakasi:65
+bulundugu bolge:DA
+komsu sayisi:5
+sehrin adi: Zonguldak
+plakasi:67
+bulundugu bolge:KA
+komsu sayisi:4
+sehrin adi: Aksaray
+plakasi:68
+bulundugu bolge:IA
+komsu sayisi:5
+sehrin adi: Bayburt
+plakasi:69
+bulundugu bolge:KA
+komsu sayisi:5
+sehrin adi: Karaman
+plakasi:70
+bulundugu bolge:IA
+komsu sayisi:3
+sehrin adi: Kirikkale
+plakasi:71
+bulundugu bolge:IA
+komsu sayisi:5
+sehrin adi: Batman
+plakasi:72
+bulundugu bolge:GA
+komsu sayisi:5
+sehrin adi: Sirnak
+plakasi:73
+bulundugu bolge:GA
+komsu sayisi:4
+sehrin adi: Bartin
+plakasi:74
+bulundugu bolge:KA
+komsu sayisi:3
+sehrin adi: Ardahan
+plakasi:75
+bulundugu bolge:DA
+komsu sayisi:3
+sehrin adi: Karabuk
+plakasi:78
+bulundugu bolge:KA
+komsu sayisi:5
+sehrin adi: Osmaniye
+plakasi:80
+bulundugu bolge:AK
+komsu sayisi:4
+sehrin adi: Duzce
+plakasi:81
+bulundugu bolge:KA
+komsu sayisi:3
+en az 3 en cok 6 komsusu olan 62 sehir vardir.
+seciminiz:9
+cikisa bastiniz.
+1 Adana AK 6
+2 Adiyaman GA 5
+3 Afyonkarahisar EG 7
+4 Agri DA 6
+5 Amasya KA 4
+6 Ankara IA 7
+7 Antalya AK 6
+8 Artvin KA 3
+9 Aydin EG 4
+10 Balikesir MA 5
+11 Bilecik MA 5
+12 Bingol DA 6
+13 Bitlis DA 5
+14 Bolu KA 8
+15 Burdur AK 5
+16 Bursa MA 6
+17 Canakkale MA 3
+18 Cankiri IA 6
+19 Corum KA 7
+20 Denizli EG 6
+21 Diyarbakir GA 8
+22 Edirne MA 3
+23 Elazig DA 5
+24 Erzincan DA 9
+25 Erzurum DA 9
+26 Eskisehir IA 6
+27 Gaziantep GA 6
+28 Giresun KA 5
+29 Gumushane KA 4
+30 Hakkari DA 2
+31 Hatay AK 3
+32 Isparta AK 4
+33 Mersin AK 5
+34 Istanbul MA 2
+35 Izmir EG 3
+36 Kars DA 4
+37 Kastamonu KA 5
+38 Kayseri IA 6
+39 Kirklareli MA 2
+40 Kirsehir IA 5
+41 Kocaeli MA 4
+42 Konya IA 9
+43 Kutahya EG 7
+44 Malatya DA 6
+45 Manisa EG 6
+46 Kahramanmaras AK 7
+47 Mardin GA 5
+48 Mugla EG 4
+49 Mus DA 6
+50 Nevsehir IA 5
+51 Nigde IA 6
+52 Ordu KA 4
+53 Rize KA 4
+54 Sakarya MA 5
+55 Samsun KA 5
+56 Siirt GA 5
+57 Sinop KA 3
+58 Sivas IA 8
+59 Tekirdag MA 4
+60 Tokat KA 5
+61 Trabzon KA 4
+62 Tunceli DA 3
+63 Sanliurfa GA 4
+64 Usak EG 4
+65 Van DA 5
+66 Yozgat IA 8
+67 Zonguldak KA 4
+68 Aksaray IA 5
+69 Bayburt KA 5
+70 Karaman IA 3
+71 Kirikkale IA 5
+72 Batman GA 5
+73 Sirnak GA 4
+74 Bartin KA 3
+75 Ardahan DA 3
+76 Igdir DA 2
+77 Yalova MA 2
+78 Karabuk KA 5
+79 Kilis GA 1
+80 Osmaniye AK 4
+81 Duzce KA 3
+seciminiz:4
+ga bolgesinde bulunan sehirler:
+sehrin adi: Adiyaman
+plakasi:2
+komsu sayisi:5
+sehrin adi: Diyarbakir
+plakasi:21
+komsu sayisi:8
+sehrin adi: Gaziantep
+plakasi:27
+komsu sayisi:6
+sehrin adi: Mardin
+plakasi:47
+komsu sayisi:5
+sehrin adi: Siirt
+plakasi:56
+komsu sayisi:5
+sehrin adi: Sanliurfa
+plakasi:63
+komsu sayisi:4
+sehrin adi: Batman
+plakasi:72
+komsu sayisi:5
+sehrin adi: Sirnak
+plakasi:73
+komsu sayisi:4
+sehrin adi: Kilis
+plakasi:79
+komsu sayisi:1
+bolgede 9 adet sehir vardir.
+seciminiz:9
+cikisa bastiniz.
